@@ -5,19 +5,21 @@ public class BirdScript : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
     public float flapStrength;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        gameObject.name = "Bob Birdington";
-    }
+    public LogicManagerScript logic;
+    public bool isAlive = true;
 
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && isAlive)
         {
             myRigidbody.linearVelocity = Vector2.up * flapStrength;
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        logic.gameOver();
+        isAlive = false;
     }
 }
