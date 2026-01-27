@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 8869517210648757556}
   - component: {fileID: 5514612595383130331}
   - component: {fileID: 6393010401369665616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomPipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,6 +336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af6fbb931962f44f918550e828fb71b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  logic: {fileID: 0}
 --- !u!1 &7447303995274802212
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +348,7 @@ GameObject:
   - component: {fileID: 3814327708439747013}
   - component: {fileID: 4614855495603244078}
   - component: {fileID: 2604231023994574369}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopPipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
